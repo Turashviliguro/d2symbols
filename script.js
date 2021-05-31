@@ -51,6 +51,7 @@
             if (glyph = Font.charToGlyph(String.fromCharCode(unicode))) {
                 this.glyphName = glyph.name;
                 this.glyphWidth = glyph.advanceWidth;
+
             }
         }
     }
@@ -172,9 +173,7 @@
                 new Glyph(0xE135, "Loader Tank"),
                 new Glyph(0xE137, "Drake")
             ],
-            "": [
-                new Glyph(0xE142, "Headshot")
-            ]
+
         },
 
         "Character": {
@@ -199,7 +198,9 @@
                 new Glyph(0xE052, "Light", Colors.EXPERIENCE),
                 new Glyph(0xE059, "Settings"),
                 new Glyph(0xE147, "Gilded", Colors.GILDED_FG, Colors.GILDED_BG),
-                new Glyph(0xE148, "Cabal Gold", Colors.LEGENDARY_LABEL)
+                new Glyph(0xE148, "Cabal Gold", Colors.LEGENDARY_LABEL),
+                 new Glyph(0xE142, "Headshot")
+
             ],
             "Activities": [
                 new Glyph(0xE053, "Small Blocker"),
