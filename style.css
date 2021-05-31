@@ -9,9 +9,9 @@ body {
     text-transform: uppercase;
     user-select: none;
   background-image: url("bg.jpg");
-    background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
+  no-repeat center fixed;     
+    background-size: cover;
+
 }
 
 /* nav */
