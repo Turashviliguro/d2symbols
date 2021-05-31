@@ -39,7 +39,7 @@ header {
     width: 100%;
     padding-bottom: 1rem;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row-reverse nowrap;
     justify-content: center;
     align-content: center;
     align-items: stretch;
@@ -49,7 +49,7 @@ header {
 main {
     width: 100%;
     height: calc(100vh - 6.5rem - 2px);
-    display: flex;
+    display: block;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
@@ -65,6 +65,7 @@ section::before {
     font-weight: 700;
     text-align: center;
     color: rgba(255, 255, 255, 255);
+
 }
 
 section {
@@ -77,6 +78,8 @@ section {
     margin: 0rem 0.1rem;
     border: 2px solid #41403d;
     border-radius: 0.5rem;
+
+
 }
 
 section section {
@@ -86,10 +89,13 @@ section section {
     border-radius: 0;
     border-left-style: hidden;
     border-right-style: hidden;
+
 }
+
 
 section section[group-name=""] {
     display: contents;
+
 }
 
 

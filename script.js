@@ -194,6 +194,7 @@
                 new Glyph(0xE078, "Stasis: Glyph 2", Colors.STASIS),
                 new Glyph(0xE079, "Stasis: Glyph 3", Colors.STASIS)
             ],
+            
             "Other": [
                 new Glyph(0xE052, "Light", Colors.EXPERIENCE),
                 new Glyph(0xE059, "Settings"),
