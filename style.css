@@ -8,7 +8,7 @@ body {
     font-family: Arial, Destiny_Keys;
     text-transform: uppercase;
     user-select: none;
-  background-image: url("bg.jpg");
+  background-image: url("7.png");
   no-repeat center fixed;     
     background-size: cover;
 
@@ -64,7 +64,7 @@ section::before {
     font-size: 1rem;
     font-weight: 700;
     text-align: center;
-    color: rgba(245, 245, 245, 0.5);
+    color: rgba(255, 255, 255, 255);
 }
 
 section {
@@ -100,7 +100,7 @@ section:hover {
 }
 
 section:hover > h1 {
-    color: rgba(245, 245, 245, 1);
+    color: rgba(255, 255, 255, 255);
     transition-duration: 0.25s;
     transition-property: color;
     transition-timing-function: cubic-bezier(0.69, 0, 0, 1);
@@ -114,7 +114,7 @@ figure {
     margin: 0.15rem;
     text-align: center;
     user-select: text;
-    color: rgba(245, 245, 245, 0.5);
+    color: rgba(255, 255, 255, 255);
     cursor: copy;
     transition-duration: 0.25s;
     transition-property: color, background;
