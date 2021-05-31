@@ -1,0 +1,278 @@
+@font-face {
+    font-family: Destiny_Keys;
+    src: url(fonts/Destiny_Keys.otf);
+}
+
+body {
+    margin: 0.25rem;
+    font-family: Arial, Destiny_Keys;
+    text-transform: uppercase;
+    user-select: none;
+  background-image: url("bg.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* nav */
+
+footer {
+  position: fixed;
+
+  bottom: 0;
+}
+
+a {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* /nav */
+
+
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 6.5rem - 2px);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+section::before {
+    content: attr(group-name);
+    display: block;
+    flex: 0 1 100%;
+    margin: 0rem 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.5);
+}
+
+section {
+    flex: 1 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: flex-start;
+    margin: 0rem 0.1rem;
+    border: 2px solid #41403d;
+    border-radius: 0.5rem;
+}
+
+section section {
+    margin: 0;
+    border-color: #41403d80;
+    border-width: 1px;
+    border-radius: 0;
+    border-left-style: hidden;
+    border-right-style: hidden;
+}
+
+section section[group-name=""] {
+    display: contents;
+}
+
+section:hover {
+    border-color: #41403d;
+    transition-duration: 0.25s;
+    transition-property: color, background, border;
+    transition-timing-function: cubic-bezier(0.69, 0, 0, 1);
+}
+
+section:hover > h1 {
+    color: rgba(245, 245, 245, 1);
+    transition-duration: 0.25s;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.69, 0, 0, 1);
+}
+
+figure {
+    flex: 0 0 0.5rem;
+    padding: 0.15rem;
+    border: 1px solid #41403d;
+    border-radius: 0.5rem;
+    margin: 0.15rem;
+    text-align: center;
+    user-select: text;
+    color: rgba(245, 245, 245, 0.5);
+    cursor: copy;
+    transition-duration: 0.25s;
+    transition-property: color, background;
+    transition-timing-function: cubic-bezier(0.69, 0, 0, 1);
+}
+
+figure:hover {
+    color: var(--color, #f5f5f5);
+    background: var(--background-color, #f5f5f530);
+}
+
+figure[zero-width] {
+    flex-basis: 1.25rem;
+    text-align: left;
+}
+
+figure[background-glyph]:hover {
+    background: #f5f5f510;
+}
+
+figure[background-glyph]:hover::before {
+    content: attr(background-glyph);
+    color: var(--background-color);
+}
+
+figure:hover::after {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.25rem;
+    content: attr(glyph);
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: none;
+    opacity: 1;
+    pointer-events: none;
+   
+}
+
+figure:active {
+    color: #212833;
+    background: #f5f5f5 !important;
+}
+
+figure::selection {
+    background: #b78c2580;
+}
+
+header input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.75rem 1rem;
+    box-sizing: content-box;
+    border: none;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.2);
+    outline: none;
+    font-family: Arial, Destiny_Keys;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-transform: none;
+    caret-color: #b78c25;
+    color: #f5f5f5;
+    background: transparent;
+    transition: 0.5s;
+}
+
+header input:focus {
+    border-bottom: 1px solid #ffce1f;
+}
+
+header input::selection {
+    background: #b78c25;
+}
+
+button {
+    position: relative;
+    display: inline-flex;
+    padding: 12px 24px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Destiny_Keys;
+    font-size: .925rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    user-select: none;
+    cursor: pointer;
+    color: #f5f5f5;
+    background: rgba(29, 34, 45, .4);
+    transition: .25s;
+}
+
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    content: "";
+    border: 1px solid #f5f5f5;
+    transition: .25s;
+}
+
+button:hover {
+    background: #1d222d;
+    box-shadow: 0 20px 25px -15px rgba(0, 0, 0, .25);
+}
+
+button:hover::after {
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+}
+
+button.gold-button {
+    color: #f5f5f5;
+    background: rgba(183, 140, 37, .8);
+}
+
+button.gold-button::after {
+    border-color: #ffce1f;
+}
+
+button.gold-button:hover {
+    background: #b78c25;
+}
+
+button.gold-button:hover::after {
+    border-color: #f5f5f5;
+}
+
+button.gold-button:active {
+    background-color: rgba(183, 140, 37, .8) !important;
+}
+
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #181c25;
+    box-shadow: inset 0 0 5px #12171c;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 1px solid #181c25;
+    background: #232936;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #272e3d;
+}
+
+::-webkit-scrollbar-corner {
+    display: none;
+}
