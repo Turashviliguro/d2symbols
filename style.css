@@ -147,11 +147,16 @@ figure:hover::after {
     width: 100%;
     padding: 0.25rem;
     content: attr(glyph);
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     text-shadow: none;
     opacity: 1;
     pointer-events: none;
+   /*
+    background: linear-gradient(rgba(255, 0, 0, 0.5) 50%, rgba(18, 23, 28, 0) 100%);
+
+    */
+
    
 }
 
@@ -161,7 +166,7 @@ figure:active {
 }
 
 figure::selection {
-    background: #b78c2580;
+    background: red;
 }
 
 header input {
@@ -176,18 +181,18 @@ header input {
     font-size: 1.5rem;
     line-height: 2.5rem;
     text-transform: none;
-    caret-color: #b78c25;
+    caret-color: red;
     color: #f5f5f5;
     background: transparent;
     transition: 0.5s;
 }
 
 header input:focus {
-    border-bottom: 1px solid #ffce1f;
+    border-bottom: 1px solid red;
 }
 
 header input::selection {
-    background: #b78c25;
+    background-color: red;
 }
 
 button {
@@ -230,27 +235,28 @@ button:hover::after {
     left: -5px;
     right: -5px;
     bottom: -5px;
+
 }
 
 button.gold-button {
     color: #f5f5f5;
-    background: rgba(183, 140, 37, .8);
+    background-color: red;
 }
 
 button.gold-button::after {
-    border-color: #ffce1f;
+    border-color: red;
 }
 
 button.gold-button:hover {
-    background: #b78c25;
+    background-color: red;
 }
 
 button.gold-button:hover::after {
-    border-color: #f5f5f5;
+    border-color: red;
 }
 
 button.gold-button:active {
-    background-color: rgba(183, 140, 37, .8) !important;
+    background-color: red;
 }
 
 

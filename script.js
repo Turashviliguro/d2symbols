@@ -176,6 +176,7 @@
                 new Glyph(0xE142, "Headshot")
             ]
         },
+
         "Character": {
             "Elements": [
                 new Glyph(0xE144, "Void", Colors.VOID),
@@ -211,8 +212,9 @@
                 new Glyph(0xE146, "Revive Token", Colors.EXOTIC_LABEL)
             ]
         },
-        "Controllers": {
-            "Playstation": [
+
+        "Controller": {
+            "PS": [
                 new Glyph(0xE000, "Playstation Cross Button", Colors.PS_BUTTON, new Glyph(0xE020, null, Colors.PS_CROSS)),
                 new Glyph(0xE001, "Playstation Circle Button", Colors.PS_BUTTON, new Glyph(0xE020, null, Colors.PS_CIRCLE)),
                 new Glyph(0xE002, "Playstation Square Button", Colors.PS_BUTTON, new Glyph(0xE020, null, Colors.PS_SQUARE)),
@@ -357,7 +359,7 @@
                 new Glyph(0xEE79, "Key Small y", Colors.KEY_FG, new Glyph(0xEEF0, null, Colors.KEY_BG)),
                 new Glyph(0xEE7A, "Key Small z", Colors.KEY_FG, new Glyph(0xEEF0, null, Colors.KEY_BG))
             ],
-            "Number Pad Keys": [
+            "Numpad Keys": [
                 new Glyph(0xEEBC, "Key Numpad Lock", Colors.KEY_FG, new Glyph(0xEEF0, null, Colors.KEY_BG)),
                 new Glyph(0xEEBD, "Key Numpad Divide", Colors.KEY_FG, new Glyph(0xEEF0, null, Colors.KEY_BG)),
                 new Glyph(0xEEBE, "Key Numpad Multiply", Colors.KEY_FG, new Glyph(0xEEF0, null, Colors.KEY_BG)),
@@ -376,6 +378,8 @@
                 new Glyph(0xEECB, "Key Numpad Enter", Colors.KEY_FG, new Glyph(0xEEF0, null, Colors.KEY_BG)),
                 new Glyph(0xEECC, "Key Numpad Decimal", Colors.KEY_FG, new Glyph(0xEEF0, null, Colors.KEY_BG))
             ],
+
+            
             "": [
                 new Glyph(0xE183, "Key Ordinal Indicator", Colors.KEY_FG, new Glyph(0xEEF0, null, Colors.KEY_BG)),
                 new Glyph(0xE189, "Key Ogonek", Colors.KEY_FG, new Glyph(0xEEF0, null, Colors.KEY_BG)),
@@ -464,20 +468,13 @@
                 new Glyph(0xEEE6, "Key Bind", Colors.KEY_FG),
                 new Glyph(0xEEF0, "Key Standard Background", Colors.KEY_FG, new Glyph(0xEEF0, null, Colors.KEY_BG)),
                 new Glyph(0xEEF1, "Key Large Background", Colors.KEY_FG, new Glyph(0xEEF0, null, Colors.KEY_BG))
-            ]
+            ],
+
+
         },
-        "Special Characters": [
-            new Glyph(0x0020, "Space"),
-            new Glyph(0x000D, "CR"),
-            new Glyph(0x036C, "Superscript r"),
-            new Glyph(0x1D49, "Saison"),
-            new Glyph(0x202F, "French Space"),
-            new Glyph(0xE050, "Service Mark"),
-            new Glyph(0xE051, "Capital Sharp S"),
-            new Glyph(0xEEA0, "No-Break Space"),
-            new Glyph(0xEEFA, "Tofu"),
-            new Glyph(0xFFFD, "Replacement Character")
-        ]
+
+
+        
     }
     var symbolBox = document.querySelector("#symbolBox");
     document.querySelector("#symbolBoxCopy").onclick = function () {
