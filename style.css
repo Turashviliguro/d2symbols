@@ -18,8 +18,9 @@ body {
 
 footer {
   position: fixed;
+bottom: 50px;
+   left: 0px;
 
-  bottom: 0;
 }
 
 a {
